@@ -98,10 +98,8 @@ public class Triangle {
 
         x = (float) (Math.random() * 2.0 - 1.0);
         y = (float) (Math.random() * 2.0 - 1.0);
-        ax = (float) (Math.random() * 2.0 - 1.0) * .01f;
-        ay = (float) (Math.random() * 2.0 - 1.0) * .01f;
-        x = 0f;
-        y = 0f;
+        ax = (float) (Math.random() * 2.0 - 1.0) * .1f;
+        ay = (float) (Math.random() * 2.0 - 1.0) * .1f;
     }
 
     public void draw(float[] mvpMatrix) {
@@ -124,20 +122,23 @@ public class Triangle {
     }
 
     public void tick() {
-        if (x > 0.0 && ax > -0.1 ) {
+        float damp = 0.15f;
+        float nullArea = 0.3f;
+
+        if (x > nullArea && ax > -0.1 ) {
             ax -= 0.01;
-        } else if ( ax < 0.1 ){
+        } else if ( x < -nullArea && ax < 0.1 ){
             ax += 0.01;
         }
 
-        if (y > 0.0 && ay > -0.1) {
+        if (y > nullArea && ay > -0.1) {
             ay -= 0.01;
-        } else if (ay < 0.1) {
+        } else if (y < -nullArea && ay < 0.1) {
             ay += 0.01;
         }
 
-        x += ax;
-        y += ay;
+        x += ax * damp;
+        y += ay * damp;
     }
 
     public float getX() {

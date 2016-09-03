@@ -33,7 +33,7 @@ public class MyGLRenderer implements GLSurfaceView.Renderer {
         mTriangle = new Triangle();
         mSquare = new Square();
 
-        for (int i = 0; i < 20; i++) {
+        for (int i = 0; i < 10; i++) {
             trigs.add(new Triangle());
         }
     }
@@ -46,18 +46,6 @@ public class MyGLRenderer implements GLSurfaceView.Renderer {
         Matrix.multiplyMM(mMVPMatrix, 0, mProjectionMatrix, 0, mViewMatrix, 0);
 
 //        mSquare.draw(mMVPMatrix);
-//
-//        Matrix.setIdentityM(mModelMatrix, 0);
-//        Matrix.translateM(mModelMatrix, 0, -0.5f, 0, 0);
-//
-//        Matrix.setRotateM(mRotationMatrix, 0, mAngle, 0, 0, 1.0f);
-//
-//        mTempMatrix = mModelMatrix.clone();
-//        Matrix.multiplyMM(mModelMatrix, 0, mTempMatrix, 0, mRotationMatrix, 0);
-//        mTempMatrix = mMVPMatrix.clone();
-//        Matrix.multiplyMM(mMVPMatrix,   0, mTempMatrix, 0, mModelMatrix,    0);
-//
-//        mTriangle.draw(mMVPMatrix);
 
         for (Triangle t : trigs) {
             t.tick();

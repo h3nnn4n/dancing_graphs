@@ -4,86 +4,41 @@
     api-level="23"
     density="xhdpi"
     format="7"
-    timestamp="386687471330868"
+    timestamp="526224492152952"
     token="-191624930259764918"
     verifier="COMPATIBLE" >
 
     <task
         name="javac"
-        duration="30" />
+        duration="28" />
     <task
         name="instant-run-dex"
-        duration="550" />
+        duration="481" />
     <task
         name="instant-run-transform"
         duration="4" />
     <task
         name="verifier"
-        duration="1" />
+        duration="0" />
 
     <artifact
         location="/home/h3nnn4n/Downloads/HelloOpenGLES20/app/build/intermediates/reload-dex/debug/classes.dex"
         type="RELOAD_DEX" />
 
-    <build timestamp="382270991760615" >
+    <build timestamp="524319844111503" >
         <artifact
             location="/home/h3nnn4n/Downloads/HelloOpenGLES20/app/build/outputs/apk/app-debug.apk"
             type="MAIN" />
     </build>
-    <build timestamp="383666786364521" >
-        <artifact
-            location="/home/h3nnn4n/Downloads/HelloOpenGLES20/app/build/intermediates/res/resources-debug.ap_"
-            type="RESOURCES" />
-    </build>
-    <build timestamp="386243305668407" >
+    <build
+        timestamp="526211016578713"
+        verifier="FIELD_REMOVED" >
         <artifact
             location="/home/h3nnn4n/Downloads/HelloOpenGLES20/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_5/classes.dex"
             type="DEX" />
     </build>
     <build
-        timestamp="386281612065094"
-        verifier="COMPATIBLE" >
-        <artifact
-            location="/home/h3nnn4n/Downloads/HelloOpenGLES20/app/build/intermediates/builds/debug/386281612065094/classes.dex"
-            type="RELOAD_DEX" />
-    </build>
-    <build
-        timestamp="386305914438921"
-        verifier="COMPATIBLE" >
-        <artifact
-            location="/home/h3nnn4n/Downloads/HelloOpenGLES20/app/build/intermediates/builds/debug/386305914438921/classes.dex"
-            type="RELOAD_DEX" />
-    </build>
-    <build
-        timestamp="386323866983523"
-        verifier="COMPATIBLE" >
-        <artifact
-            location="/home/h3nnn4n/Downloads/HelloOpenGLES20/app/build/intermediates/builds/debug/386323866983523/classes.dex"
-            type="RELOAD_DEX" />
-    </build>
-    <build
-        timestamp="386631107070854"
-        verifier="COMPATIBLE" >
-        <artifact
-            location="/home/h3nnn4n/Downloads/HelloOpenGLES20/app/build/intermediates/builds/debug/386631107070854/classes.dex"
-            type="RELOAD_DEX" />
-    </build>
-    <build
-        timestamp="386651608864292"
-        verifier="COMPATIBLE" >
-        <artifact
-            location="/home/h3nnn4n/Downloads/HelloOpenGLES20/app/build/intermediates/builds/debug/386651608864292/classes.dex"
-            type="RELOAD_DEX" />
-    </build>
-    <build
-        timestamp="386665635946291"
-        verifier="COMPATIBLE" >
-        <artifact
-            location="/home/h3nnn4n/Downloads/HelloOpenGLES20/app/build/intermediates/builds/debug/386665635946291/classes.dex"
-            type="RELOAD_DEX" />
-    </build>
-    <build
-        timestamp="386687471330868"
+        timestamp="526224492152952"
         verifier="COMPATIBLE" >
         <artifact
             location="/home/h3nnn4n/Downloads/HelloOpenGLES20/app/build/intermediates/reload-dex/debug/classes.dex"
